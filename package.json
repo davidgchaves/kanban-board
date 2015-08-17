@@ -1,0 +1,15 @@
+{
+  "name": "kanban-board",
+  "version": "0.0.1",
+  "description": "Kanban board with React and Webpack",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "webpack",
+    "react",
+    "es6",
+    "babel"
+  ],
+  "author": "David G. Chaves <davidgchaves@gmail.com>",
+  "license": "ISC"
+}
