@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Kanban board with React and Webpack",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "keywords": [
     "webpack",
     "react",
