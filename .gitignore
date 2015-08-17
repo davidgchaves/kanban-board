@@ -23,3 +23,6 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+# Ignore build folder (it should be regenerated each time)
+build/
