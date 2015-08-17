@@ -1,6 +1,6 @@
 /* Entry point of our app */
 
-require('./main.css');
+require('./stylesheets/main.css');
 
 var h1Component = require('./h1-component');
 var app         = document.createElement('div');

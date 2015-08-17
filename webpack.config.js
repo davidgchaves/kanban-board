@@ -20,6 +20,10 @@ if (TARGET === 'start' || !TARGET) {
     module: {
       preloaders: [
         {
+          test: /\.css$/,
+          loader: 'csslint',
+        },
+        {
           test: /\.jsx?$/,
           loader: 'eslint-loader',
           include: path.resolve(ROOT_PATH, 'app')
