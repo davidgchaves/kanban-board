@@ -27,6 +27,8 @@
     "eslint-plugin-react": "^3.2.3",
     "eslint-plugin-smells": "^1.0.1",
     "html-webpack-plugin": "^1.6.1",
+    "jscs": "^2.1.0",
+    "jscs-loader": "^0.2.0",
     "node-libs-browser": "^0.5.2",
     "style-loader": "^0.12.3",
     "webpack": "^1.11.0",

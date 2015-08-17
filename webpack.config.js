@@ -25,7 +25,7 @@ if (TARGET === 'start' || !TARGET) {
         },
         {
           test: /\.jsx?$/,
-          loader: 'eslint-loader',
+          loader: ['eslint-loader', 'jscs-loader'],
           include: path.resolve(ROOT_PATH, 'app')
         }
       ],
