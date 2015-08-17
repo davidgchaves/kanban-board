@@ -4,7 +4,8 @@
   "description": "Kanban board with React and Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "eslint . --ext .js --ext .jsx"
   },
   "keywords": [
     "webpack",
@@ -15,7 +16,12 @@
   "author": "David G. Chaves <davidgchaves@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^4.0.10",
     "css-loader": "^0.16.0",
+    "eslint": "^1.1.0",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.2.3",
+    "eslint-plugin-smells": "^1.0.1",
     "html-webpack-plugin": "^1.6.1",
     "node-libs-browser": "^0.5.2",
     "style-loader": "^0.12.3",

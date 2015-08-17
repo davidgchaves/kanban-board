@@ -11,24 +11,28 @@ var common = {
   output: {
     path: path.resolve(ROOT_PATH, 'build'),
     filename: 'bundle.js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loaders: ['style', 'css'],
-        include: path.resolve(ROOT_PATH, 'app')
-      }
-    ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({ title: 'Kanban Board' })
-  ]
+  }
 };
 
 if (TARGET === 'start' || !TARGET) {
   module.exports = merge(common, {
     devtool: 'eval-source-map',
+    module: {
+      preloaders: [
+        {
+          test: /\.jsx?$/,
+          loader: 'eslint-loader',
+          include: path.resolve(ROOT_PATH, 'app')
+        }
+      ],
+      loaders: [
+        {
+          test: /\.css$/,
+          loaders: ['style', 'css'],
+          include: path.resolve(ROOT_PATH, 'app')
+        }
+      ]
+    },
     devServer: {
       port: 4000,
       colors: true,
@@ -39,6 +43,7 @@ if (TARGET === 'start' || !TARGET) {
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({ title: 'Kanban Board' })
     ]
   });
 };
