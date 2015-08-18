@@ -32,6 +32,7 @@
     "jscs": "^2.1.0",
     "jscs-loader": "^0.2.0",
     "node-libs-browser": "^0.5.2",
+    "react-hot-loader": "^1.2.8",
     "style-loader": "^0.12.3",
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1",
