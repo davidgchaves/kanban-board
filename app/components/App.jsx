@@ -1,3 +1,4 @@
+import 'array.prototype.findIndex';
 import uuid from 'node-uuid';
 import React from 'react';
 import Notes from './Notes.jsx';
