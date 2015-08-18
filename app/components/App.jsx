@@ -9,18 +9,9 @@ export default class App extends React.Component {
 
     this.state = {
       notes: [
-        {
-          id: uuid.v4(),
-          task: 'Go pick amazon package'
-        },
-        {
-          id: uuid.v4(),
-          task: 'Find a nice place to eat'
-        },
-        {
-          id: uuid.v4(),
-          task: 'Try the new Memopulse MVP'
-        }
+        { id: uuid.v4(), task: 'Go pick amazon package' },
+        { id: uuid.v4(), task: 'Find a nice place to eat' },
+        { id: uuid.v4(), task: 'Try the new Memopulse MVP' }
       ]
     };
 
@@ -61,7 +52,7 @@ export default class App extends React.Component {
     let notes = this.state.notes;
     const noteIndex = notes.findIndex((note) => note.id === id);
 
-    if(noteIndex < 0) { console.warn('Failed to find note', notes, id); }
+    if (noteIndex < 0) { console.warn('Failed to find note', notes, id); }
 
     return noteIndex;
   }
