@@ -1,5 +1,6 @@
 /* Entry point of our app */
 
+import 'array.prototype.findIndex';
 import './stylesheets/main.css';
 import React from 'react';
 import App from './components/App.jsx';
